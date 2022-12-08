@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  width: 80vw;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+}
+
+nav ul {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+nav li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+header h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 3em;
+  width: 40vw;
+}
+
+header p {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  width: 36vw;
+  text-align: center;
+  line-height: 2em;
+}
+
+header img {
+  width: 60vw;
+  margin-bottom: 50px;
+}
+
+.main__cards {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.main__cards__item {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+}
+
+.main__cards h2 {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 900;
+  width: 16vw;
+}
+
+.main__cards__item img {
+  width: 30vw;
+}
+
+.main__cards__item p {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  width: 30vw;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  line-height: 2em;
+}
+
+.main__cards__item__paragraph {
+  justify-content: center;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.7em;
+  padding: 10px 20px;
+  border: 2px solid black;
+  background: transparent;
+  transition: 200ms linear;
+}
+
+button:hover,
+header h1:hover,
+.main__cards h2:hover {
+  color: rgb(24, 191, 239);
+  border-color: rgb(24, 191, 239);
+  cursor: pointer;
+}
