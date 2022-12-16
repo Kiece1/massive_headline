@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header img:hover {
+  transform: scale(1.2);
+}
+
+header p {
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+  font-size: 1.5rem;
+}
+
+header img:hover {
+  transform: scale(1.01);
+}
+
+.main__cards__header__text {
+  width: 34vw;
+  line-height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2.3rem;
+  text-align: justify;
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1920px) {
+  .main__cards__header__text {
+    width: 34vw;
+    line-height: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2.3rem;
+    text-align: justify;
+    font-size: 1rem;
+  }
+}

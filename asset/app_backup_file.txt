@@ -1,0 +1,140 @@
+console.log("Debut de Programme");
+
+const idConth1 = document.getElementById("idcontenth1");
+const idContp = document.getElementById("idcontentp");
+const idContbtn = document.getElementById("idcontentbtn");
+const idCont = [idConth1, idContp, idContbtn];
+
+const idli12 = document.getElementById("li12");
+const idli13 = document.getElementById("li13");
+const idli21 = document.getElementById("li21");
+const idli23 = document.getElementById("li23");
+const idli31 = document.getElementById("li31");
+const idli32 = document.getElementById("li32");
+
+const clLi1 = document.querySelector(".clLi1");
+const clLi2 = document.querySelector(".clLi2");
+const clLi3 = document.querySelector(".clLi3");
+
+const clCont1 = document.querySelector(".container1");
+const clCont2 = document.querySelector(".container2");
+const clCont3 = document.querySelector(".container3");
+const clCont = [clCont1, clCont2, clCont3];
+
+const clVisible = document.querySelector(".classVisible");
+const clHidden = document.querySelector(".classHidden");
+let posY = 0;
+
+const position = window.addEventListener("scroll", () => {
+  posY = window.scrollY;
+});
+
+const basicFun = (element) => {
+  if (posY > 100) {
+    element.style.opacity = 0;
+    element.style.transition = "1.5 ease-in";
+  } else {
+    element.style.opacity = 1;
+    element.style.transition = "0.3s ease-out";
+  }
+};
+
+const opa = window.addEventListener("scroll", () => {
+  idCont.forEach((element) => basicFun(element));
+});
+
+idContbtn.onclick = function () {
+  console.log(idContbtn);
+
+  if (idContbtn.style.borderColor != "red") {
+    idContbtn.style.color = "red";
+    idContbtn.style.borderColor = "red";
+  } else {
+    idContbtn.style.color = "green";
+    idContbtn.style.borderColor = "green";
+  }
+};
+
+let clCont1Class = clCont1.classList;
+let clCont2Class = clCont2.classList;
+let clCont3Class = clCont3.classList;
+
+const funHidden = (element) => {
+  element.add("classHidden");
+  element.remove("classVisible");
+};
+
+const funVisible = (element) => {
+  element.add("classVisible");
+  element.remove("classHidden");
+};
+
+funVisible(clCont1Class);
+funHidden(clCont2Class);
+funHidden(clCont3Class);
+console.log(clCont1, clCont2, clCont3);
+
+clLi1.addEventListener("click", () => {
+  funVisible(clContClass1);
+  funHidden(clContClass2);
+  funHidden(clContClass3);
+  console.log(clCont1, clCont2, clCont3);
+});
+
+clLi2.addEventListener("click", () => {
+  funHidden(clContClass1);
+  funVisible(clContClass2);
+  funHidden(clContClass3);
+  console.log(clCont1, clCont2, clCont3);
+});
+
+clLi3.addEventListener("click", () => {
+  funHidden(clContClass1);
+  funHidden(clContClass2);
+  funVisible(clContClass3);
+  console.log(clCont1, clCont2, clCont3);
+});
+
+idli12.addEventListener("click", () => {
+  funHidden(clCont1Class);
+  funVisible(clCont2Class);
+  funHidden(clCont3Class);
+  console.log(clCont1, clCont2, clCont3);
+});
+
+idli13.addEventListener("click", () => {
+  funHidden(clCont1Class);
+  funHidden(clCont2Class);
+  funVisible(clCont3Class);
+  console.log(clCont1, clCont2, clCont3);
+});
+
+idli21.addEventListener("click", () => {
+  funVisible(clCont1Class);
+  funHidden(clCont2Class);
+  funHidden(clCont3Class);
+  console.log(clCont1, clCont2, clCont3);
+});
+
+idli23.addEventListener("click", () => {
+  funHidden(clCont1Class);
+  funHidden(clCont2Class);
+  funVisible(clCont3Class);
+  console.log(clCont1, clCont2, clCont3);
+});
+
+idli31.addEventListener("click", () => {
+  funVisible(clCont1Class);
+  funHidden(clCont2Class);
+  funHidden(clCont3Class);
+  console.log(clCont1, clCont2, clCont3);
+});
+
+idli32.addEventListener("click", () => {
+  funHidden(clCont1Class);
+  funVisible(clCont2Class);
+  funHidden(clCont3Class);
+  console.log(clCont1, clCont2, clCont3);
+});
+
+console.log("Fin de Programme");

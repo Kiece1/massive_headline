@@ -1,0 +1,26 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 80vw;
+  transform: translate(-2rem, -8rem);
+  background-color: aliceblue;
+}
+
+nav ul {
+  margin: 2rem 0;
+  font-size: 1rem;
+  font-weight: 900;
+  display: flex;
+  flex-direction: row;
+}
+
+nav li {
+  margin-left: 1rem;
+  margin-right: 5rem;
+  cursor: pointer;
+}
+
+nav li:hover {
+  color: var(--blue-color-variation);
+}

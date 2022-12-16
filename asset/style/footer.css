@@ -1,0 +1,89 @@
+footer {
+  margin-top: 2rem;
+  margin-left: -2rem;
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  background: var(--gray-color-variation);
+}
+
+.footer__form {
+  padding-left: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.footer__form input {
+  padding: 1rem;
+  margin: 1rem 4rem 1rem 0;
+  width: 32vw;
+  background: var(--gray-color-variation);
+}
+
+.footer__form label {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+#message {
+  padding-bottom: 10rem;
+}
+
+footer ul {
+  margin-bottom: 6rem;
+}
+
+footer li {
+  margin: 2rem 0rem 3rem 8rem;
+  height: 4rem;
+}
+
+footer li::before {
+  margin-right: 2rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+footer li:hover footer li::before {
+  color: black;
+}
+
+#idli1::before {
+  content: "adress";
+}
+
+#idli2::before {
+  content: "phone";
+}
+#idli3::before {
+  content: "email";
+}
+
+#idli4::before {
+  content: "social";
+}
+
+footer li i {
+  margin: 0 1rem;
+}
+
+textarea {
+  width: 32vw;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  background: var(--gray-color-variation);
+  border: 2px solid black;
+}
+
+footer i:hover {
+  color: var(--blue-color-variation);
+}

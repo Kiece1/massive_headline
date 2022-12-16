@@ -1,0 +1,30 @@
+:root{
+  --background-color-number-list: black;
+}
+
+.main__nmblist ul {
+  margin: 3rem 0 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__nmblist li {
+  font-weight: 900;
+  padding: 1rem 1.2rem;
+  border: 2px solid var(--gray-color-variation);
+}
+
+.main__nmblist li:hover {
+  color: var(--blue-color-variation);
+  border: 3px solid var(--blue-color-variation);
+}
+
+#idnmbli4:hover {
+  color: var(--background-color-number-list);
+  border-color: var(--gray-color-variation);
+}
+
+#idnmbli1 {
+  background: var(--gray-color-variation);
+}

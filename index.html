@@ -4,111 +4,494 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="asset\style.css" />
+    <link rel="stylesheet" href="asset\style\style.css" />
+    <link rel="stylesheet" href="asset\style\header.css" />
+    <link rel="stylesheet" href="asset\style\navbar.css" />
+    <link rel="stylesheet" href="asset\style\container1.css" />
+    <link rel="stylesheet" href="asset\style\container2.css" />
+    <link rel="stylesheet" href="asset\style\container3.css" />
+    <link rel="stylesheet" href="asset\style\button.css" />
+    <link rel="stylesheet" href="asset\style\title.css" />
+    <link rel="stylesheet" href="asset\style\nmblist.css" />
+    <link rel="stylesheet" href="asset\style\footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="main">
-      <div id="idcontent" class="main__content">
-        <h1>THIS IS MASSIVELY</h1>
-        <p>
-          A free, fully responsive HTML5 + CSS3 site template designed by @ajlkn
+      <div id="idcont" class="main__content">
+        <!----------------------------------------->
+        <!-- TITRE du SITE  ----------------------->
+        <!----------------------------------------->
+
+        <h1 id="idcontenth1">THIS IS MASSIVELY</h1>
+        <p id="idcontentp">
+          A free, fully responsive HTML5 + CSS3 site template designed by @Kiece
           for HTML5 UP and released for free under the Creative Commons license.
         </p>
-        <button class="main__content__button">massively</button>
+        <button id="idcontentbtn" class="main__content__button model__button">
+          massively
+        </button>
       </div>
-      <div class="container">
-        <nav>
+
+      <!----------------------------------------->
+      <!-- PREMIERE PAGE ------------------------>
+      <!----------------------------------------->
+      <!-- BARRE de NAVIGATION ------------------>
+      <!----------------------------------------->
+
+      <div class="container1">
+        <nav style="visibility: visible">
           <ul>
-            <li id="li1">THIS IS MASSIVELY</li>
-            <li id="li2">GENERIC PAGE</li>
-            <li id="li3">ELEMENTS REFERENCE</li>
+            <li class="clLi1">THIS IS MASSIVELY</li>
+            <li id="li12" class="clLi2">GENERIC PAGE</li>
+            <li id="li13" class="clLi3">ELEMENTS REFERENCE</li>
           </ul>
         </nav>
-        <div class="container__header">
+        <div class="container1__header">
           <header>
-            <p>April 25, 2017</p>
+            <p class="date">April 25, 2017</p>
             <h2>AND THIS IS A MASSIVE HEADLINE</h2>
-            <p class="container__header__text">
+            <p class="container1__header__text">
               Aenean ornare velit lacus varius enim ullamcorper proin aliquam
               facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor
               amet nullam sed etiam veroeros.
             </p>
-            <img src="asset\pic01.jpg" />
-            <button>Full Story</button>
+            <div class="container1__header__photo">
+              <img src="asset\img\pic01.jpg" />
+            </div>
+            <button class="model__button">Full Story</button>
           </header>
         </div>
+        <!----------------------------------------->
+        <!-- PARTIE PRINCIPALE -------------------->
+        <!----------------------------------------->
+
         <main>
+          <!----------------------------------------->
+          <!-- PREMIERE "CARDS" --------------------->
+          <!----------------------------------------->
+
           <div class="main__cards">
             <div class="main__cards__item">
-              <p class="main__cards__item__date">April 24, 2017</p>
+              <p class="date">April 24, 2017</p>
               <h3>SED MAGNA IPSUM FAUCIBUS</h3>
-              <img src="asset\pic02.jpg" />
-              <p class="container__header__text">
+              <img src="asset\img\pic02.jpg" />
+              <p class="main__cards__header__text">
                 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
                 primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
                 mattis sagittis magna etiam.
               </p>
-              <button>Full Story</button>
+              <button class="model__button">Full Story</button>
             </div>
             <div class="main__cards__item">
-              <p class="main__cards__item__date">April 24, 2017</p>
+              <p class="date">April 24, 2017</p>
               <h3>SED MAGNA IPSUM FAUCIBUS</h3>
-              <img src="asset\pic03.jpg" />
-              <p class="container__header__text">
+              <img src="asset\img\pic03.jpg" />
+              <p class="main__cards__header__text">
                 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
                 primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
                 mattis sagittis magna etiam.
               </p>
-              <button>Full Story</button>
+              <button class="model__button">Full Story</button>
             </div>
             <div class="main__cards__item">
-              <p class="main__cards__item__date">April 24, 2017</p>
+              <p class="date">April 24, 2017</p>
               <h3>SED MAGNA IPSUM FAUCIBUS</h3>
-              <img src="asset\pic04.jpg" />
-              <p class="container__header__text">
+              <img src="asset\img\pic04.jpg" />
+              <p class="main__cards__header__text">
                 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
                 primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
                 mattis sagittis magna etiam.
               </p>
-              <button>Full Story</button>
+              <button class="model__button">Full Story</button>
             </div>
             <div class="main__cards__item">
-              <p class="main__cards__item__date">April 24, 2017</p>
+              <p class="date">April 24, 2017</p>
               <h3>SED MAGNA IPSUM FAUCIBUS</h3>
-              <img src="asset\pic05.jpg" />
-              <p class="container__header__text">
+              <img src="asset\img\pic05.jpg" />
+              <p class="main__cards__header__text">
                 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
                 primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
                 mattis sagittis magna etiam.
               </p>
-              <button>Full Story</button>
+              <button class="model__button">Full Story</button>
             </div>
             <div class="main__cards__item">
-              <p class="main__cards__item__date">April 24, 2017</p>
+              <p class="date">April 24, 2017</p>
               <h3>SED MAGNA IPSUM FAUCIBUS</h3>
-              <img src="asset\pic06.jpg" />
-              <p class="container__header__text">
+              <img src="asset\img\pic06.jpg" />
+              <p class="main__cards__header__text">
                 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
                 primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
                 mattis sagittis magna etiam.
               </p>
-              <button>Full Story</button>
+              <button class="model__button">Full Story</button>
             </div>
             <div class="main__cards__item">
-              <p class="main__cards__item__date">April 24, 2017</p>
+              <p class="date">April 24, 2017</p>
               <h3>SED MAGNA IPSUM FAUCIBUS</h3>
-              <img src="asset\pic07.jpg" />
-              <p class="container__header__text">
+              <img src="asset\img\pic07.jpg" />
+              <p class="main__cards__header__text">
                 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
                 primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
                 mattis sagittis magna etiam.
               </p>
-              <button>Full Story</button>
+              <button class="model__button">Full Story</button>
+            </div>
+          </div>
+          <!----------------------------------------->
+          <!-- LIST of NUMBER ----------------------->
+          <!----------------------------------------->
+          <div class="main__nmblist">
+            <ul>
+              <li id="idnmbli1">1</li>
+              <li>2</li>
+              <li>3</li>
+              <li id="idnmbli4">...</li>
+              <li>8</li>
+              <li>9</li>
+              <li>10</li>
+              <li>Next &gt;</li>
+            </ul>
+          </div>
+        </main>
+        <footer>
+          <div class="footer__form">
+            <form action="URL" method="get">
+              <label for="name"
+                >name
+                <input id="name" type="text" placeholder="" />
+              </label>
+              <label for="email"
+                >email
+                <input id="email" type="email" placeholder="" />
+              </label>
+              <label for="message"
+                >message
+                <!-- <input type="text" placeholder="" /> -->
+                <textarea id="message"></textarea>
+              </label>
+              <input id="button" type="button" value="send message" />
+            </form>
+          </div>
+          <ul>
+            <li id="idli1">
+              1234 Somewhere Road #87257 Nashville, TN 00000-0000
+            </li>
+            <li id="idli2">(000) 000-0000</li>
+            <li id="idli3">info@untitled.tld</li>
+            <li id="idli4">
+              <i id="facebook" class="fa-brands fa-facebook"></i
+              ><i id="twitter" class="fa-brands fa-twitter"></i
+              ><i id="instagram" class="fa-brands fa-instagram"></i
+              ><i id="github" class="fa-brands fa-github"></i>
+            </li>
+          </ul>
+        </footer>
+      </div>
+      <div class="container2">
+        <!----------------------------------------->
+        <!-- DEUXIEME PAGE ------------------------>
+        <!----------------------------------------->
+        <!-- BARRE de NAVIGATION ------------------>
+        <!----------------------------------------->
+        <nav>
+          <ul>
+            <li id="li21" class="clLi1">THIS IS MASSIVELY</li>
+            <li class="clLi2">GENERIC PAGE</li>
+            <li id="li23" class="clLi3">ELEMENTS REFERENCE</li>
+          </ul>
+        </nav>
+        <div class="container2__header">
+          <header>
+            <p class="date">April 25, 2017</p>
+            <h2>THIS IS A GENERIC PAGE</h2>
+            <p class="container2__header__text">
+              Molestiae voluptates aperiam eveniet nesciunt, ad ea sapiente
+              nihil corrupti perferendis laboriosam, expedita maiores est itaque
+              optio qui modi cum ipsam deserunt, esse dolorum corporis provident
+              odio quo. Similique, est?
+            </p>
+            <div class="container2__header__photo">
+              <img src="asset\img\pic01.jpg" />
+            </div>
+          </header>
+        </div>
+        <!----------------------------------------->
+        <!-- PARTIE PRINCIPALE -------------------->
+        <!----------------------------------------->
+        <main>
+          <p class="container2__text">
+            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
+            mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor
+            sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet,
+            fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit.
+            Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc
+            lorem mauris, fringilla in aliquam at, euismod in lectus.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada
+            fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis
+            at, elementum convallis enim turpis, lorem ipsum dolor sit amet
+            nullam.
+          </p>
+          <p class="container2__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
+            libero eu nibh porttitor fermentum. Nullam venenatis erat id
+            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
+            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
+            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
+            lectus. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. In non lorem sit amet elit
+            placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex
+            magna. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+            Praesent rutrum sem diam, vitae egestas enim auctor sit amet.
+            Pellentesque leo mauris, consectetur id ipsum.
+          </p>
+        </main>
+        <footer>
+          <div class="footer__form">
+            <form action="URL" method="get">
+              <label for="name"
+                >name
+                <input id="name" type="text" placeholder="" />
+              </label>
+              <label for="email"
+                >email
+                <input id="email" type="email" placeholder="" />
+              </label>
+              <label for="message"
+                >message
+                <!-- <input type="text" placeholder="" /> -->
+                <textarea id="message"></textarea>
+              </label>
+              <input id="button" type="button" value="send message" />
+            </form>
+          </div>
+          <ul>
+            <li id="idli1">
+              1234 Somewhere Road #87257 Nashville, TN 00000-0000
+            </li>
+            <li id="idli2">(000) 000-0000</li>
+            <li id="idli3">info@untitled.tld</li>
+            <li id="idli4">
+              <i id="facebook" class="fa-brands fa-facebook"></i
+              ><i id="twitter" class="fa-brands fa-twitter"></i
+              ><i id="instagram" class="fa-brands fa-instagram"></i
+              ><i id="github" class="fa-brands fa-github"></i>
+            </li>
+          </ul>
+        </footer>
+      </div>
+      <div class="container3">
+        <!----------------------------------------->
+        <!-- TROISIEME PAGE ------------------------>
+        <!----------------------------------------->
+        <!-- BARRE de NAVIGATION ------------------>
+        <!----------------------------------------->
+        <nav>
+          <ul>
+            <li id="li31" class="clLi1">THIS IS MASSIVELY</li>
+            <li id="li32" class="clLi2">GENERIC PAGE</li>
+            <li class="clLi3">ELEMENTS REFERENCE</li>
+          </ul>
+        </nav>
+        <div class="container__header">
+          <header>
+            <h2>ELEMENTS REFERENCE</h2>
+          </header>
+        </div>
+        <!----------------------------------------->
+        <!-- PARTIE PRINCIPALE 66------------------>
+        <!----------------------------------------->
+        <main>
+          <!----------------------------------------->
+          <!-- PREMIERE "CARDS" --------------------->
+          <!----------------------------------------->
+          <h3>text</h3>
+          <p>
+            This is bold and this is <strong>strong</strong>. This is
+            <i>italic</i> and this is <em>emphasized</em>. This is superscript
+            text and this is subscript text. This is underlined and this is
+            code: for (;;) { ... }. Finally, this is a link.
+          </p>
+          <h3>HEADING LEVEL 2</h3>
+          <p id="idHlev3">HEADING LEVEL 3</p>
+          <p id="idHlev4">HEADING LEVEL 4</p>
+          <p id="idHlev5">HEADING LEVEL 5</p>
+          <p id="idHlev6">HEADING LEVEL 6</p>
+          <div class="container3__main">
+            <h3>lists</h3>
+            <div class="container3__main__cards">
+              <div class="container3__main__cards__item">
+                <h4>unordered</h4>
+                <ul>
+                  <li>Dolor pulvinar etiam.</li>
+                  <li>Sagittis lorem eleifend.</li>
+                  <li>Felis feugiat dolore viverra.</li>
+                  <li>Dolor pulvinar etiam.</li>
+                </ul>
+              </div>
+              <div class="container3__main__cards__item">
+                <h4>ordered</h4>
+                <ol>
+                  <li>Dolor pulvinar etiam.</li>
+                  <li>Sagittis lorem eleifend.</li>
+                  <li>Felis feugiat dolore viverra.</li>
+                  <li>Dolor pulvinar etiam.</li>
+                </ol>
+              </div>
+              <div class="container3__main__cards__item">
+                <h4>alternate</h4>
+                <ul>
+                  <li>Dolor pulvinar etiam.</li>
+                  <li>Sagittis lorem eleifend.</li>
+                  <li>Felis feugiat dolore viverra.</li>
+                  <li>Dolor pulvinar etiam.</li>
+                </ul>
+              </div>
+              <div class="container3__main__cards__item">
+                <h4>icons</h4>
+                <ul>
+                  <li id="idCont3li1">
+                    <i id="facebook" class="fa-brands fa-facebook"></i
+                    ><i id="twitter" class="fa-brands fa-twitter"></i
+                    ><i id="instagram" class="fa-brands fa-instagram"></i
+                    ><i id="github" class="fa-brands fa-github"></i>
+                  </li>
+                  <li id="idCont3li2">
+                    <i id="facebook" class="fa-brands fa-facebook"></i
+                    ><i id="twitter" class="fa-brands fa-twitter"></i
+                    ><i id="instagram" class="fa-brands fa-instagram"></i
+                    ><i id="github" class="fa-brands fa-github"></i>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="container3__main__def">
+              <h4>definition</h4>
+              <h5>Item 1</h5>
+              <p>
+                Lorem ipsum dolor vestibulum ante ipsum primis in faucibus
+                vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
+                adipiscing accumsan eu faucibus. Integer ac pellentesque
+                praesent.
+              </p>
+              <h5>Item 2</h5>
+              <p>
+                Lorem ipsum dolor vestibulum ante ipsum primis in faucibus
+                vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
+                adipiscing accumsan eu faucibus. Integer ac pellentesque
+                praesent.
+              </p>
+              <h5>Item 3</h5>
+              <p>
+                Lorem ipsum dolor vestibulum ante ipsum primis in faucibus
+                vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
+                adipiscing accumsan eu faucibus. Integer ac pellentesque
+                praesent.
+              </p>
+            </div>
+            <div>
+              <h4>actions</h4>
+              <ul>
+                <li>
+                  <button class="btn1 model__button">primary</button>
+                  <button class="btn2 model__button">default</button>
+                </li>
+                <li>
+                  <button class="btn1small model__button">small</button>
+                  <button class="btn2small model__button">small</button>
+                </li>
+              </ul>
+              <div class="container3__list">
+                <div class="container3__list__term">
+                  <li>
+                    <button class="btn1 model__button">default</button>
+                  </li>
+                  <li><button class="btn2 model__button">default</button></li>
+                  <li>
+                    <button class="btn1big model__button">default</button>
+                  </li>
+                  <li>
+                    <button class="btn2bigdef model__button">default</button>
+                  </li>
+                </div>
+                <div class="container3__list__term">
+                  <li>
+                    <button class="btn1small model__button">small</button>
+                  </li>
+                  <li><button class="btn2small model__button">small</button></li>
+                  <li>
+                    <button class="btn1bigsmall model__button">small</button>
+                  </li>
+                  <li><button class="btn2big model__button">small</button></li>
+                </div>
+              </div>
+            </div>
+            <div class="container3__blockquote">
+              <h3>blockquote</h3>
+              <p>
+                Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt
+                felis sagittis eget tempus euismod. Vestibulum ante ipsum primis
+                in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+                volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum
+                primis in faucibus vestibulum. Blandit adipiscing eu felis.
+              </p>
+            </div>
+            <div>
+              <h4>table</h4>
+              <h5>default</h5>
             </div>
           </div>
         </main>
-        <footer></footer>
+        <footer>
+          <div class="footer__form">
+            <form action="URL" method="get">
+              <label for="name"
+                >name
+                <input id="name" type="text" placeholder="" />
+              </label>
+              <label for="email"
+                >email
+                <input id="email" type="email" placeholder="" />
+              </label>
+              <label for="message"
+                >message
+                <!-- <input type="text" placeholder="" /> -->
+                <textarea id="message"></textarea>
+              </label>
+              <input id="button" type="button" value="send message" />
+            </form>
+          </div>
+          <ul>
+            <li id="idli1">
+              1234 Somewhere Road #87257 Nashville, TN 00000-0000
+            </li>
+            <li id="idli2">(000) 000-0000</li>
+            <li id="idli3">info@untitled.tld</li>
+            <li id="idli4">
+              <i id="facebook" class="fa-brands fa-facebook"></i
+              ><i id="twitter" class="fa-brands fa-twitter"></i
+              ><i id="instagram" class="fa-brands fa-instagram"></i
+              ><i id="github" class="fa-brands fa-github"></i>
+            </li>
+          </ul>
+        </footer>
       </div>
     </div>
   </body>
+  <script src="asset\app.js"></script>
 </html>
