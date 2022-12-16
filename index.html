@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="asset\style\container3.css" />
     <link rel="stylesheet" href="asset\style\button.css" />
     <link rel="stylesheet" href="asset\style\title.css" />
-    <link rel="stylesheet" href="asset\style\nmblist.css" />
+    <link rel="stylesheet" href="asset\style\numberList.css" />
     <link rel="stylesheet" href="asset\style\footer.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&display=swap"
@@ -152,12 +152,12 @@
           <!----------------------------------------->
           <!-- LIST of NUMBER ----------------------->
           <!----------------------------------------->
-          <div class="main__nmblist">
+          <div class="main__numberlist">
             <ul>
-              <li id="idnmbli1">1</li>
+              <li id="idNumberLi1">1</li>
               <li>2</li>
               <li>3</li>
-              <li id="idnmbli4">...</li>
+              <li id="idNumberLi2">...</li>
               <li>8</li>
               <li>9</li>
               <li>10</li>
@@ -323,9 +323,13 @@
           <h3>text</h3>
           <p>
             This is bold and this is <strong>strong</strong>. This is
-            <i>italic</i> and this is <em>emphasized</em>. This is superscript
-            text and this is subscript text. This is underlined and this is
-            code: for (;;) { ... }. Finally, this is a link.
+            <i>italic</i> and this is <em>emphasized</em>. This is
+            <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+            This is <u>underlined</u> and this is code:
+            <span style="background: antiquewhite; padding: "
+              >for (;;) { ... }</span
+            >. Finally, this is a
+            <a href="#">link.</a>
           </p>
           <h3>HEADING LEVEL 2</h3>
           <p id="idHlev3">HEADING LEVEL 3</p>
@@ -423,7 +427,7 @@
                   </li>
                   <li><button class="btn2 model__button">default</button></li>
                   <li>
-                    <button class="btn1big model__button">default</button>
+                    <button class="btn1big btn1 model__button">default</button>
                   </li>
                   <li>
                     <button class="btn2bigdef model__button">default</button>
@@ -431,9 +435,11 @@
                 </div>
                 <div class="container3__list__term">
                   <li>
-                    <button class="btn1small model__button">small</button>
+                    <button class="btn1small btn1 model__button">small</button>
                   </li>
-                  <li><button class="btn2small model__button">small</button></li>
+                  <li>
+                    <button class="btn2small model__button">small</button>
+                  </li>
                   <li>
                     <button class="btn1bigsmall model__button">small</button>
                   </li>

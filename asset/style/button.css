@@ -67,18 +67,12 @@ button:hover {
 
 .btn1small {
   padding: 0.8rem 1.25rem;
-  margin: 1rem 1rem 1rem 0;
   font-size: 0.7rem;
-  color: white;
-  background: black;
 }
 
 .btn1big {
-  width: 30rem;
   padding: 1rem 1.25rem;
-  margin: 1rem 1rem 1rem 0;
-  color: white;
-  background: black;
+  width: 30rem;
 }
 
 .btn1small:hover {
@@ -115,7 +109,6 @@ button:hover {
   margin: 1rem 1rem 1rem 0;
   color: black;
   background: white;
-  color: 1px solid black;
 }
 
 .btn2small {
@@ -124,7 +117,6 @@ button:hover {
   font-size: 0.7rem;
   color: black;
   background: white;
-  color: 1px solid black;
 }
 
 .btn2big {
@@ -134,7 +126,6 @@ button:hover {
   font-size: 0.7rem;
   color: black;
   background: white;
-  color: 1px solid black;
 }
 
 .btn2bigdef {
@@ -143,5 +134,4 @@ button:hover {
   margin: 1rem 1rem 1rem 0;
   color: black;
   background: white;
-  color: 1px solid black;
 }

@@ -1,18 +1,22 @@
+:root {
+  --color-navbar-line: var(--blue-color-variation);
+  --background-color-navbar: white;
+  --width-navbar: 80vw;
+}
+
 nav {
   display: flex;
-  flex-direction: row;
-  justify-content: left;
-  width: 80vw;
-  transform: translate(-2rem, -8rem);
-  background-color: aliceblue;
+  width: var(--width-navbar);
+  transform: translate(-2rem, -7.3rem);
+  background-color: var(--background-color-navbar);
 }
 
 nav ul {
-  margin: 2rem 0;
-  font-size: 1rem;
-  font-weight: 900;
   display: flex;
   flex-direction: row;
+  margin: 2rem 0;
+  font-size: 1rem;
+  font-weight: var(--font-weight);
 }
 
 nav li {
@@ -22,5 +26,5 @@ nav li {
 }
 
 nav li:hover {
-  color: var(--blue-color-variation);
+  color: var(--color-navbar-line);
 }
