@@ -1,38 +1,49 @@
-.container1 {
-  width: 80vw;
-  margin-top: 80rem;
-  padding: 2rem;
-  text-align: justify;
-  background: white;
-  z-index: 1;
+:root {
+  --container1-width: 80vw;
+  --container1-margin: 80rem 0 0 0;
+  --container1-padding: 2rem;
+  --container1-text-align: justify;
+  --container1-background-color: white;
+  --container1-header-text-width: 34vw;
+  --container1-header-text-line-height: 2.7rem;
+  --container1-header-text-margin: 2rem 2.3rem;
+  --container1-header-font-style: italic;
+  --container1-header-font-size: 1.2rem;
+  --container1-header-text-text-align: center;
+  --container1-header-text-position-z: 1;
+  --container1-header-text-photo-width: 60vw;
+  --container1-header-text-photo-height: 100vh;
 }
 
-.container1__header__text {
-  width: 34vw;
-  line-height: 2.7rem;
-  margin-top: 2rem;
-  margin-bottom: 2.3rem;
-  font-style: italic;
-  text-align: center;
-  font-size: 1.2em;
-  /* white-space: pre-wrap; */
+.container1,
+.container2,
+.container3 {
+  width: var(--container1-width);
+  margin: var(--container1-margin);
+  padding: var(--container1-padding);
+  text-align: var(--container1-text-align);
+  background: var(--container1-background-color);
+  z-index: var(--container1-header-text-position-z);
 }
 
-.container1__header__photo {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
+.container__header__text {
+  width: var(--container1-header-text-width);
+  line-height: var(--container1-header-text-line-height);
+  margin: var(--container1-header-text-margin);
+  font-style: var(--container1-header-font-style);
+  text-align: var(--container1-header-text-text-align);
+  font-size: var(--container1-header-font-size);
 }
 
-.container1__header__photo img {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 60vw;
-  display: block;
+.main__cards__item__photo {
+  overflow: hidden;
 }
 
-div.container1__header > p.date {
-  margin-bottom: 3rem;
+.main__cards__item__photo img {
+  transition: 400ms ease-in;
+  transition-delay: 100ms;
+}
+
+img:hover {
+  transform: scale(1.05);
 }

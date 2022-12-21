@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="asset\style\style.css" />
     <link rel="stylesheet" href="asset\style\header.css" />
     <link rel="stylesheet" href="asset\style\navbar.css" />
+    <link rel="stylesheet" href="asset\style\container.css" />
     <link rel="stylesheet" href="asset\style\container1.css" />
     <link rel="stylesheet" href="asset\style\container2.css" />
     <link rel="stylesheet" href="asset\style\container3.css" />
@@ -52,21 +53,25 @@
       <div class="container1">
         <nav style="visibility: visible">
           <ul>
-            <li class="clLi1">THIS IS MASSIVELY</li>
+            <li id="li11" class="clLi1">THIS IS MASSIVELY</li>
             <li id="li12" class="clLi2">GENERIC PAGE</li>
             <li id="li13" class="clLi3">ELEMENTS REFERENCE</li>
           </ul>
+          <i id="facebook" class="fa-brands fa-facebook fa-2xl"></i
+          ><i id="twitter" class="fa-brands fa-twitter fa-2xl"></i
+          ><i id="instagram" class="fa-brands fa-instagram fa-2xl"></i
+          ><i id="github" class="fa-brands fa-github fa-2xl"></i>
         </nav>
-        <div class="container1__header">
+        <div class="container__header">
           <header>
             <p class="date">April 25, 2017</p>
             <h2>AND THIS IS A MASSIVE HEADLINE</h2>
-            <p class="container1__header__text">
+            <p class="container__header__text">
               Aenean ornare velit lacus varius enim ullamcorper proin aliquam
               facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor
               amet nullam sed etiam veroeros.
             </p>
-            <div class="container1__header__photo">
+            <div class="container__header__photo">
               <img src="asset\img\pic01.jpg" />
             </div>
             <button class="model__button">Full Story</button>
@@ -85,7 +90,9 @@
             <div class="main__cards__item">
               <p class="date">April 24, 2017</p>
               <h3>SED MAGNA IPSUM FAUCIBUS</h3>
-              <img src="asset\img\pic02.jpg" />
+              <div class="main__cards__item__photo">
+                <img src="asset\img\pic02.jpg" />
+              </div>
               <p class="main__cards__header__text">
                 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
                 primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
@@ -96,7 +103,9 @@
             <div class="main__cards__item">
               <p class="date">April 24, 2017</p>
               <h3>SED MAGNA IPSUM FAUCIBUS</h3>
-              <img src="asset\img\pic03.jpg" />
+              <div class="main__cards__item__photo">
+                <img src="asset\img\pic03.jpg" />
+              </div>
               <p class="main__cards__header__text">
                 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
                 primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
@@ -107,7 +116,9 @@
             <div class="main__cards__item">
               <p class="date">April 24, 2017</p>
               <h3>SED MAGNA IPSUM FAUCIBUS</h3>
-              <img src="asset\img\pic04.jpg" />
+              <div class="main__cards__item__photo">
+                <img src="asset\img\pic04.jpg" />
+              </div>
               <p class="main__cards__header__text">
                 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
                 primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
@@ -118,7 +129,9 @@
             <div class="main__cards__item">
               <p class="date">April 24, 2017</p>
               <h3>SED MAGNA IPSUM FAUCIBUS</h3>
-              <img src="asset\img\pic05.jpg" />
+              <div class="main__cards__item__photo">
+                <img src="asset\img\pic05.jpg" />
+              </div>
               <p class="main__cards__header__text">
                 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
                 primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
@@ -129,7 +142,9 @@
             <div class="main__cards__item">
               <p class="date">April 24, 2017</p>
               <h3>SED MAGNA IPSUM FAUCIBUS</h3>
-              <img src="asset\img\pic06.jpg" />
+              <div class="main__cards__item__photo">
+                <img src="asset\img\pic06.jpg" />
+              </div>
               <p class="main__cards__header__text">
                 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
                 primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
@@ -140,7 +155,9 @@
             <div class="main__cards__item">
               <p class="date">April 24, 2017</p>
               <h3>SED MAGNA IPSUM FAUCIBUS</h3>
-              <img src="asset\img\pic07.jpg" />
+              <div class="main__cards__item__photo">
+                <img src="asset\img\pic07.jpg" />
+              </div>
               <p class="main__cards__header__text">
                 Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
                 primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
@@ -178,28 +195,43 @@
               </label>
               <label for="message"
                 >message
-                <!-- <input type="text" placeholder="" /> -->
                 <textarea id="message"></textarea>
               </label>
-              <input id="button" type="button" value="send message" />
+              <input
+                id="button1"
+                class="model__button form__button"
+                type="button"
+                value="send message"
+              />
             </form>
           </div>
           <ul>
             <li id="idli1">
-              1234 Somewhere Road #87257 Nashville, TN 00000-0000
+              <strong>ADDRESS</strong>&emsp;&emsp;
+              <address>
+                Somewhere Road #87257
+                <br />Nashville, TN 00000-0000
+              </address>
             </li>
-            <li id="idli2">(000) 000-0000</li>
-            <li id="idli3">info@untitled.tld</li>
+            <li id="idli2">
+              <strong>PHONE</strong>&emsp;&emsp;
+              <phone>(000) 000-0000</phone>
+            </li>
+            <li id="idli3">
+              <strong>EMAIL</strong>&emsp;&emsp;
+              <email>info@untitled.tld</email>
+            </li>
             <li id="idli4">
-              <i id="facebook" class="fa-brands fa-facebook"></i
-              ><i id="twitter" class="fa-brands fa-twitter"></i
-              ><i id="instagram" class="fa-brands fa-instagram"></i
-              ><i id="github" class="fa-brands fa-github"></i>
+              <strong>SOCIAL</strong>&emsp;&emsp;
+              <i id="facebook" class="fa-brands fa-facebook fa-xl"></i
+              ><i id="twitter" class="fa-brands fa-twitter fa-xl"></i
+              ><i id="instagram" class="fa-brands fa-instagram fa-xl"></i
+              ><i id="github" class="fa-brands fa-github fa-xl"></i>
             </li>
           </ul>
         </footer>
       </div>
-      <div class="container2">
+      <div class="container2 container1">
         <!----------------------------------------->
         <!-- DEUXIEME PAGE ------------------------>
         <!----------------------------------------->
@@ -208,21 +240,25 @@
         <nav>
           <ul>
             <li id="li21" class="clLi1">THIS IS MASSIVELY</li>
-            <li class="clLi2">GENERIC PAGE</li>
+            <li id="li22" class="clLi2">GENERIC PAGE</li>
             <li id="li23" class="clLi3">ELEMENTS REFERENCE</li>
           </ul>
+          <i id="facebook" class="fa-brands fa-facebook fa-2xl"></i
+          ><i id="twitter" class="fa-brands fa-twitter fa-2xl"></i
+          ><i id="instagram" class="fa-brands fa-instagram fa-2xl"></i
+          ><i id="github" class="fa-brands fa-github fa-2xl"></i>
         </nav>
-        <div class="container2__header">
+        <div class="container__header">
           <header>
             <p class="date">April 25, 2017</p>
             <h2>THIS IS A GENERIC PAGE</h2>
-            <p class="container2__header__text">
+            <p class="container__header__text">
               Molestiae voluptates aperiam eveniet nesciunt, ad ea sapiente
               nihil corrupti perferendis laboriosam, expedita maiores est itaque
               optio qui modi cum ipsam deserunt, esse dolorum corporis provident
               odio quo. Similique, est?
             </p>
-            <div class="container2__header__photo">
+            <div class="container__header__photo">
               <img src="asset\img\pic01.jpg" />
             </div>
           </header>
@@ -274,28 +310,38 @@
               </label>
               <label for="message"
                 >message
-                <!-- <input type="text" placeholder="" /> -->
                 <textarea id="message"></textarea>
               </label>
-              <input id="button" type="button" value="send message" />
+              <input
+                id="button1"
+                class="model__button form__button"
+                type="button"
+                value="send message"
+              />
             </form>
           </div>
           <ul>
             <li id="idli1">
-              1234 Somewhere Road #87257 Nashville, TN 00000-0000
+              <strong>ADDRESS:</strong>
+              <address>Somewhere Road #87257 Nashville, TN 00000-0000</address>
             </li>
-            <li id="idli2">(000) 000-0000</li>
-            <li id="idli3">info@untitled.tld</li>
+            <li id="idli2">
+              <strong>PHONE:</strong><phone>(000) 000-0000</phone>
+            </li>
+            <li id="idli3">
+              <strong>EMAIL:</strong><email>info@untitled.tld</email>
+            </li>
             <li id="idli4">
-              <i id="facebook" class="fa-brands fa-facebook"></i
-              ><i id="twitter" class="fa-brands fa-twitter"></i
-              ><i id="instagram" class="fa-brands fa-instagram"></i
-              ><i id="github" class="fa-brands fa-github"></i>
+              <strong>SOCIAL:</strong>
+              <i id="facebook" class="fa-brands fa-facebook fa-xl"></i
+              ><i id="twitter" class="fa-brands fa-twitter fa-xl"></i
+              ><i id="instagram" class="fa-brands fa-instagram fa-xl"></i
+              ><i id="github" class="fa-brands fa-github fa-xl"></i>
             </li>
           </ul>
         </footer>
       </div>
-      <div class="container3">
+      <div class="container3 container1">
         <!----------------------------------------->
         <!-- TROISIEME PAGE ------------------------>
         <!----------------------------------------->
@@ -305,8 +351,12 @@
           <ul>
             <li id="li31" class="clLi1">THIS IS MASSIVELY</li>
             <li id="li32" class="clLi2">GENERIC PAGE</li>
-            <li class="clLi3">ELEMENTS REFERENCE</li>
+            <li id="li33" class="clLi3">ELEMENTS REFERENCE</li>
           </ul>
+          <i id="facebook" class="fa-brands fa-facebook fa-2xl"></i
+          ><i id="twitter" class="fa-brands fa-twitter fa-2xl"></i
+          ><i id="instagram" class="fa-brands fa-instagram fa-2xl"></i
+          ><i id="github" class="fa-brands fa-github fa-2xl"></i>
         </nav>
         <div class="container__header">
           <header>
@@ -326,9 +376,7 @@
             <i>italic</i> and this is <em>emphasized</em>. This is
             <sup>superscript</sup> text and this is <sub>subscript</sub> text.
             This is <u>underlined</u> and this is code:
-            <span style="background: antiquewhite; padding: "
-              >for (;;) { ... }</span
-            >. Finally, this is a
+            <span>for (;;) { ... }</span>. Finally, this is a
             <a href="#">link.</a>
           </p>
           <h3>HEADING LEVEL 2</h3>
@@ -336,6 +384,38 @@
           <p id="idHlev4">HEADING LEVEL 4</p>
           <p id="idHlev5">HEADING LEVEL 5</p>
           <p id="idHlev6">HEADING LEVEL 6</p>
+          <div class="container3__heading">
+            <h3>HEADING WITH A SUBTITLE</h3>
+            <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+            <br />
+            <p>
+              Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida
+              odio porttitor sem non mi integer non faucibus ornare mi ut ante
+              amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem
+              accumsan varius montes viverra nibh in adipiscing blandit tempus
+              accumsan.
+            </p>
+            <p id="idH1">HEADING WITH A SUBTITLE</p>
+            <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+            <br />
+            <p>
+              Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida
+              odio porttitor sem non mi integer non faucibus ornare mi ut ante
+              amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem
+              accumsan varius montes viverra nibh in adipiscing blandit tempus
+              accumsan.
+            </p>
+            <p id="idH2">HEADING WITH A SUBTITLE</p>
+            <p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+            <br />
+            <p>
+              Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida
+              odio porttitor sem non mi integer non faucibus ornare mi ut ante
+              amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem
+              accumsan varius montes viverra nibh in adipiscing blandit tempus
+              accumsan.
+            </p>
+          </div>
           <div class="container3__main">
             <h3>lists</h3>
             <div class="container3__main__cards">
@@ -351,10 +431,11 @@
               <div class="container3__main__cards__item">
                 <h4>ordered</h4>
                 <ol>
-                  <li>Dolor pulvinar etiam.</li>
-                  <li>Sagittis lorem eleifend.</li>
-                  <li>Felis feugiat dolore viverra.</li>
-                  <li>Dolor pulvinar etiam.</li>
+                  <li id="olLi1">Dolor pulvinar etiam.</li>
+                  <li id="olLi2">Sagittis lorem eleifend.</li>
+                  <li id="olLi3">Felis feugiat dolore viverra.</li>
+                  <li id="olLi4">Dolor pulvinar etiam.</li>
+                  <li id="olLi5">Felis enim et tempus.</li>
                 </ol>
               </div>
               <div class="container3__main__cards__item">
@@ -370,16 +451,16 @@
                 <h4>icons</h4>
                 <ul>
                   <li id="idCont3li1">
-                    <i id="facebook" class="fa-brands fa-facebook"></i
-                    ><i id="twitter" class="fa-brands fa-twitter"></i
-                    ><i id="instagram" class="fa-brands fa-instagram"></i
-                    ><i id="github" class="fa-brands fa-github"></i>
+                    <i id="facebook" class="fa-brands fa-facebook fa-2xl"></i
+                    ><i id="twitter" class="fa-brands fa-twitter fa-2xl"></i
+                    ><i id="instagram" class="fa-brands fa-instagram fa-2xl"></i
+                    ><i id="github" class="fa-brands fa-github fa-2xl"></i>
                   </li>
                   <li id="idCont3li2">
-                    <i id="facebook" class="fa-brands fa-facebook"></i
-                    ><i id="twitter" class="fa-brands fa-twitter"></i
-                    ><i id="instagram" class="fa-brands fa-instagram"></i
-                    ><i id="github" class="fa-brands fa-github"></i>
+                    <i id="facebook" class="fa-brands fa-facebook fa-l"></i
+                    ><i id="twitter" class="fa-brands fa-twitter fa-l"></i
+                    ><i id="instagram" class="fa-brands fa-instagram fa-l"></i
+                    ><i id="github" class="fa-brands fa-github fa-l"></i>
                   </li>
                 </ul>
               </div>
@@ -412,38 +493,42 @@
               <h4>actions</h4>
               <ul>
                 <li>
-                  <button class="btn1 model__button">primary</button>
-                  <button class="btn2 model__button">default</button>
+                  <button class="model__button btn1">primary</button>
+                  <button class="model__button btn2">default</button>
                 </li>
                 <li>
-                  <button class="btn1small model__button">small</button>
-                  <button class="btn2small model__button">small</button>
+                  <button class="model__button btn1 btnsmall">small</button>
+                  <button class="model__button btnsmall">small</button>
                 </li>
               </ul>
               <div class="container3__list">
                 <div class="container3__list__term">
                   <li>
-                    <button class="btn1 model__button">default</button>
+                    <button class="model__button btn1">default</button>
                   </li>
-                  <li><button class="btn2 model__button">default</button></li>
+                  <li><button class="model__button btn2">default</button></li>
                   <li>
-                    <button class="btn1big btn1 model__button">default</button>
+                    <button class="model__button btn1 btnwide">default</button>
                   </li>
                   <li>
-                    <button class="btn2bigdef model__button">default</button>
+                    <button class="model__button btn2 btnwide">default</button>
                   </li>
                 </div>
                 <div class="container3__list__term">
                   <li>
-                    <button class="btn1small btn1 model__button">small</button>
+                    <button class="model__button btn1 btnsmall">small</button>
                   </li>
                   <li>
-                    <button class="btn2small model__button">small</button>
+                    <button class="model__button btnsmall">small</button>
                   </li>
                   <li>
-                    <button class="btn1bigsmall model__button">small</button>
+                    <button class="model__button btn1 btnwidesmall">
+                      small
+                    </button>
                   </li>
-                  <li><button class="btn2big model__button">small</button></li>
+                  <li>
+                    <button class="model__button btnwidesmall">small</button>
+                  </li>
                 </div>
               </div>
             </div>
@@ -458,9 +543,133 @@
               </p>
             </div>
             <div>
-              <h4>table</h4>
-              <h5>default</h5>
+              <h3>table</h3>
+              <h4>default</h4>
             </div>
+          </div>
+          <div class="container3__buttons">
+            <h3>BUTTONS</h3>
+            <ul>
+              <li>
+                <button class="model__button btn1">primary</button>
+                <button class="model__button btn2">default</button>
+              </li>
+              <li>
+                <button class="model__button btn1 btnlarge">large</button>
+                <button class="model__button btn2">default</button>
+                <button class="model__button btnsmall">small</button>
+              </li>
+              <li>
+                <button class="model__button btn1 btnwide">fit</button>
+                <button class="model__button btn2 btnwide">fit</button>
+              </li>
+              <li>
+                <button class="model__button btn1 btnwidesmall">
+                  fit+small
+                </button>
+                <button class="model__button btnwidesmall">fit+small</button>
+              </li>
+              <li>
+                <button id="icon1" class="model__button btn1">
+                  <i class="fa-solid fa-magnifying-glass"></i> icon
+                </button>
+                <button id="icon2" class="model__button btn2">
+                  <i class="fa-solid fa-download"></i> icon
+                </button>
+              </li>
+              <li style="opacity: 0.5">
+                <button class="model__button btn1">primary</button>
+                <button class="model__button btn2">default</button>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>IMAGE</h3>
+            <h4>FIT</h4>
+            <img id="imgfit1" src="asset\img\pic01.jpg" width="900px" />
+          </div>
+          <div class="container3__photos">
+            <img src="asset\img\pic02.jpg" width="290px" />
+            <img src="asset\img\pic03.jpg" width="290px" />
+            <img src="asset\img\pic04.jpg" width="290px" />
+            <img src="asset\img\pic04.jpg" width="290px" />
+            <img src="asset\img\pic02.jpg" width="290px" />
+            <img src="asset\img\pic03.jpg" width="290px" />
+            <img src="asset\img\pic03.jpg" width="290px" />
+            <img src="asset\img\pic04.jpg" width="290px" />
+            <img src="asset\img\pic02.jpg" width="290px" />
+          </div>
+          <div class="container3__leftRight">
+            <h4>LEFT & RIGHT</h4>
+            <img id="imgLeft" src="asset\img\pic04.jpg" />
+            <p>
+              Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis
+              sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
+              faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat
+              ac adipiscing accumsan eu faucibus. Integer ac pellentesque
+              praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum
+              ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante
+              ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
+              iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac
+              pellentesque praesent tincidunt felis sagittis eget. tempus
+              euismod. Vestibulum ante ipsum primis in faucibus vestibulum.
+              Blandit adipiscing eu felis iaculis volutpat ac adipiscing
+              accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum
+              ante ipsum primis in faucibus magna blandit adipiscing eu felis
+              iaculis.<br /><br />
+            </p>
+            <img id="imgRight" src="asset\img\pic03.jpg" />
+            <p>
+              Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis
+              sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
+              faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat
+              ac adipiscing accumsan eu faucibus. Integer ac pellentesque
+              praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum
+              ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante
+              ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
+              iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac
+              pellentesque praesent tincidunt felis sagittis eget. tempus
+              euismod. Vestibulum ante ipsum primis in faucibus vestibulum.
+              Blandit adipiscing eu felis iaculis volutpat ac adipiscing
+              accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum
+              ante ipsum primis in faucibus magna blandit adipiscing eu felis
+              iaculis.
+            </p>
+          </div>
+          <h4>BOX</h4>
+          <div class="container3__box">
+            <p>
+              Felis sagittis eget tempus primis in faucibus vestibulum. Blandit
+              adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu
+              faucibus. Integer ac pellentesque praesent tincidunt felis
+              sagittis eget. tempus euismod. Magna sed etiam ante ipsum primis
+              in faucibus vestibulum. Blandit adipiscing eu ipsum primis in
+              faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat
+              ac adipiscing accumsan eu faucibus lorem ipsum dolor sit amet
+              nullam. Integer ac pellentesque praesent tincidunt felis sagittis
+              eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget.
+              tempus euismod. Vestibulum ante ipsum primis in faucibus
+              vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
+              adipiscing accumsan eu faucibus. Integer ac pellentesque praesent
+              tincidunt felis sagittis eget. tempus euismod. Vestibulum ante
+              ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
+              iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac
+              pellentesque praesent. Vestibulum ante ipsum primis in faucibus
+              magna blandit adipiscing eu felis iaculis volutpat lorem ipsum
+              dolor.
+            </p>
+          </div>
+          <div class="container3__preformated">
+            <h3>preformated</h3>
+            <p>
+              i = 0;<br /><br /><br />
+              while&emsp;(!deck.isInOrder())&emsp;{<br /><br />&emsp; &emsp;
+              print 'Iteration '&ensp;+&ensp;i;<br /><br />&emsp; &emsp;
+              deck.shuffle(); <br /><br />&emsp; &emsp; i++;<br /><br />
+              }<br /><br /><br />
+              print 'It took '&ensp;+&ensp;i&ensp;+&ensp;' iterations to sort
+              the deck.';
+            </p>
           </div>
         </main>
         <footer>
@@ -476,23 +685,33 @@
               </label>
               <label for="message"
                 >message
-                <!-- <input type="text" placeholder="" /> -->
                 <textarea id="message"></textarea>
               </label>
-              <input id="button" type="button" value="send message" />
+              <input
+                id="button1"
+                class="model__button form__button"
+                type="button"
+                value="send message"
+              />
             </form>
           </div>
           <ul>
             <li id="idli1">
-              1234 Somewhere Road #87257 Nashville, TN 00000-0000
+              <strong>ADDRESS:</strong>
+              <address>Somewhere Road #87257 Nashville, TN 00000-0000</address>
             </li>
-            <li id="idli2">(000) 000-0000</li>
-            <li id="idli3">info@untitled.tld</li>
+            <li id="idli2">
+              <strong>PHONE:</strong><phone>(000) 000-0000</phone>
+            </li>
+            <li id="idli3">
+              <strong>EMAIL:</strong><email>info@untitled.tld</email>
+            </li>
             <li id="idli4">
-              <i id="facebook" class="fa-brands fa-facebook"></i
-              ><i id="twitter" class="fa-brands fa-twitter"></i
-              ><i id="instagram" class="fa-brands fa-instagram"></i
-              ><i id="github" class="fa-brands fa-github"></i>
+              <strong>SOCIAL:</strong>
+              <i id="facebook" class="fa-brands fa-facebook fa-xl"></i
+              ><i id="twitter" class="fa-brands fa-twitter fa-xl"></i
+              ><i id="instagram" class="fa-brands fa-instagram fa-xl"></i
+              ><i id="github" class="fa-brands fa-github fa-xl"></i>
             </li>
           </ul>
         </footer>

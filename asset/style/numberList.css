@@ -1,39 +1,52 @@
 :root {
-  --background-color-number-list: black;
-  --border-thickness-numberlist-li: 2px;
-  --border-thickness-numberlist-li-hover: 4px;
-  --margin-numberlist-li-variation: calc(
-    var(--border-thickness-numberlist-li) -
-      var(--border-thickness-numberlist-li-hover)
+  --numberlist-background-color: black;
+  --numberlist-idnumberli1-background-color: var(--gray-color-variation);
+  --numberlist-idnumberli1-background-color-hover: var(
+    --numberlist-idnumberli1-background-color
+  );
+  --numberlist-idnumberli2-border-color-hover: var(
+    --numberlist-idnumberli1-background-color
+  );
+  --numberlist-ul-border-margin: 3rem 0 5rem;
+  --numberlist-li-font-weight: var(--font-weight);
+  --numberlist-li-background-color: var(--gray-color-variation);
+  --numberlist-li-border-thickness: 2px;
+  --numberlist-li-border-padding: 1rem 1.2rem;
+  --numberlist-li-border-margin-hover: var(--numberlist-li-margin) 0;
+  --numberlist-li-border-thickness-hover: 4px;
+  --numberlist-li-border-color-hover: var(--blue-color-variation);
+  --numberlist-li-margin: calc(
+    var(--numberlist-li-border-thickness) -
+      var(--numberlist-li-border-thickness-hover)
   );
 }
 
 .main__numberlist ul {
-  margin: 3rem 0 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: var(--numberlist-ul-border-margin);
 }
 
 .main__numberlist li {
-  font-weight: var(--font-weight);
-  padding: 1rem 1.2rem;
-  border: var(--border-thickness-numberlist-li) var(--border-style-button)
-    var(--gray-color-variation);
+  font-weight: var(--numberlist-li-font-weight);
+  padding: var(--numberlist-li-border-padding);
+  border: var(--numberlist-li-border-thickness) var(--button-border-style)
+    var(--numberlist-li-background-color);
 }
 
 .main__numberlist li:hover {
-  margin: var(--margin-numberlist-li-variation) 0;
-  color: var(--blue-color-variation);
-  border: var(--border-thickness-numberlist-li-hover) var(--border-style-button)
-    var(--blue-color-variation);
+  margin: var(--numberlist-li-border-margin-hover);
+  color: var(--numberlist-li-border-color-hover);
+  border: var(--numberlist-li-border-thickness-hover) var(--button-border-style)
+    var(--numberlist-li-border-color-hover);
 }
 
 #idNumberLi1 {
-  background: var(--gray-color-variation);
+  background: var(--numberlist-idnumberli1-background-color);
 }
 
 #idNumberLi2:hover {
-  color: var(--background-color-number-list);
-  border-color: var(--gray-color-variation);
+  color: var(--numberlist-idnumberli2-background-color-hover);
+  border-color: var(--numberlist-idnumberli2-border-color-hover);
 }

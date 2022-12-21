@@ -1,10 +1,20 @@
+:root {
+  --gray-color-variation3: rgb(55, 54, 54);
+  --gray-color-variation4: rgb(167, 165, 165);
+  --footer-form-background-color: var(--gray-color-variation);
+  --footer-form-input-background-color: var(--gray-color-variation);
+  --footer-form-textarea-background-color: var(--gray-color-variation);
+  --footer-form-icons-color: var(--blue-color-variation);
+}
+
 footer {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   margin-left: -2rem;
   display: flex;
   align-items: center;
+  justify-content: baseline;
   width: 80vw;
-  background: var(--gray-color-variation);
+  background: var(--footer-form-background-color);
 }
 
 .footer__form {
@@ -20,7 +30,7 @@ footer {
   padding: 1rem;
   margin: 1rem 4rem 1rem 0;
   width: 32vw;
-  background: var(--gray-color-variation);
+  background: var(--footer-form-input-background-color);
 }
 
 .footer__form label {
@@ -36,43 +46,14 @@ footer {
   padding-bottom: 10rem;
 }
 
-footer ul {
-  margin-bottom: 6rem;
-}
-
 footer li {
-  margin: 2rem 0rem 3rem 8rem;
+  margin: 2rem;
   height: 4rem;
-}
-
-footer li::before {
-  margin-right: 2rem;
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 0.9rem;
-}
-
-footer li:hover footer li::before {
-  color: black;
-}
-
-#idli1::before {
-  content: "adress";
-}
-
-#idli2::before {
-  content: "phone";
-}
-#idli3::before {
-  content: "email";
-}
-
-#idli4::before {
-  content: "social";
+  white-space: nowrap;
 }
 
 footer li i {
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
 
 textarea {
@@ -80,10 +61,22 @@ textarea {
   margin-top: 1rem;
   padding-top: 1rem;
   padding-left: 1rem;
-  background: var(--gray-color-variation);
+  background: var(--footer-form-textarea-background-color);
   border: 2px solid black;
 }
 
+footer i {
+  border-radius: 50%;
+  padding: 1.2rem 0.6rem;
+  color: var(--gray-color-variation3);
+  border: 2px solid transparent;
+}
+
 footer i:hover {
-  color: var(--blue-color-variation);
+  color: var(--footer-form-icons-color);
+  border-color: var(--blue-color-variation);
+}
+
+#idli1{
+  display: flex;
 }

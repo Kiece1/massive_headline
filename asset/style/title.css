@@ -50,7 +50,8 @@ h3 {
 }
 
 h4,
-#idHlev3 {
+#idHlev3,
+#idH1 {
   margin: 3rem 0 1.5rem;
   text-transform: uppercase;
   display: flex;
@@ -62,7 +63,8 @@ h4,
 }
 
 h5,
-#idHlev4 {
+#idHlev4,
+#idH2 {
   margin: 1rem 0;
   text-transform: capitalize;
   display: flex;

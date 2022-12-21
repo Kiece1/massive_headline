@@ -1,19 +1,47 @@
 :root {
   --font-size-main-content-button: 2.5rem;
   --border-thickness-main-content-button: 0.5rem;
-  --cursor-type-button: pointer;
   --font-style-button: uppercase;
   --font-weight-button: 900;
-  --border-style-button: solid;
-  --border-thickness-button: 1px;
+  --button-border-style: solid;
+  --button-padding: var(--padding-top-style-button)
+    var(--padding-left-style-button);
+  --button-border: var(--border-thickness-button) var(--button-border-style)
+    var(--border-color-button);
+  --border-thickness-button: 2px;
+  --border-color-button: black;
   --align-style-button: center;
   --padding-top-style-button: 1.2rem;
   --padding-left-style-button: 4rem;
-  --border-radius-button: 3px;
+  --border-radius-button: 0 * 3px;
   --border-color-main-content-button: white;
   --font-color-main-content-button: white;
   --background-color-main-content-button: transparent;
   --background-color-button: transparent;
+  --btn-margin: 1rem 1rem 1rem 0;
+  --btn1-padding: 1rem 2.5rem;
+  --btnsmall-padding: 0.8rem 1.25rem;
+  --btnlarge-padding: 1.25rem 3rem;
+  --btnwidesmall-padding: var(--btnsmall-padding);
+  --btnwidesmall-width: var(--btnwide-width);
+  --btnwide-width: 30rem;
+  --btn1-color-background: black;
+  --btn1-color-font: white;
+  --btn1-color-font-hover: var(--blue-color-variation);
+  --btn1-color-background-hover: var(--blue-color-variation);
+  --btn2-color-background: white;
+  --btn2-color-font: black;
+  --btn2-color-font-hover: var(--blue-color-variation);
+  --btn2-color-border-hover: var(--blue-color-variation);
+  --btn2-padding: var(--btn1-padding);
+  --btnsmall-font-size: 0.7rem;
+  --button-font-color: var(--blue-color-variation);
+  --button-border-color: var(--blue-color-variation);
+  --button-cursor-type: pointer;
+  --button-form-border: 2.5px solid black;
+  --button-form-font-size: 0.8rem;
+  --button-form-font-width: 12rem;
+  --button-form-background-color: transparent;
 }
 
 .model__button {
@@ -21,10 +49,16 @@
   text-align: var(--align-style-button);
   font-weight: var(--font-weight-button);
   border-radius: var(--border-radius-button);
-  padding: var(--padding-top-style-button) var(--padding-left-style-button);
-  border: var(--border-thickness-button) var(--border-style-button) black;
+  padding: var(--button-padding);
+  border: var(--button-border);
   background: var(--background-color-button);
+  cursor: var(--button-cursor-type);
   transition: 200ms linear;
+}
+
+.model__button:hover {
+  color: var(--button-font-color);
+  border-color: var(--button-border-color);
 }
 
 .main__content__button {
@@ -32,106 +66,50 @@
   padding: 1rem 2rem;
   font-size: var(--font-size-main-content-button);
   background-color: var(--background-color-main-content-button);
-  border: var(--border-thickness-main-content-button) var(--border-style-button)
+  border: var(--border-thickness-main-content-button) var(--button-border-style)
     var(--border-color-main-content-button);
   color: var(--font-color-main-content-button);
 }
 
-.main__content__button:hover {
-  border-color: var(--blue-color-variation);
-  color: var(--blue-color-variation);
-}
-
-button:hover {
-  color: var(--blue-color-variation);
-  border-color: var(--blue-color-variation);
-  cursor: var(--cursor-type-button);
-}
-
-#button {
-  font-size: 0.8rem;
-  margin-top: 1rem;
-  padding: 1rem 2rem;
-  border: 2.5px solid black;
-  width: 12rem;
-  background: transparent;
-  transition: 200ms linear;
+.form__button {
+  font-size: var(--button-form-font-size) !important;
+  border: var(--button-form-border);
+  width: var(--button-form-width) !important;
+  background: var(--button-form-background-color);
 }
 
 .btn1 {
-  padding: 1rem 2.5rem;
-  margin: 1rem 1rem 1rem 0;
-  color: white;
-  background: black;
+  padding: var(--btn1-padding);
+  margin: var(--btn-margin);
+  color: var(--btn1-color-font);
+  background: var(--btn1-color-background);
 }
 
-.btn1small {
-  padding: 0.8rem 1.25rem;
-  font-size: 0.7rem;
+.btnsmall {
+  padding: var(--btnsmall-padding);
+  font-size: var(--btnsmall-font-size);
 }
 
-.btn1big {
-  padding: 1rem 1.25rem;
-  width: 30rem;
+.btnlarge {
+  padding: var(--btnlarge-padding);
 }
 
-.btn1small:hover {
-  color: white;
-  background: var(--blue-color-variation);
+.btnwide {
+  width: var(--btnwide-width);
 }
 
-.btn1bigsmall {
-  width: 30rem;
-  padding: 0.8rem 1.25rem;
-  margin: 1rem 1rem 1rem 0;
-  font-size: 0.7rem;
-  color: white;
-  background: black;
-}
-
-.btn1big:hover {
-  color: white;
-  background: var(--blue-color-variation);
-}
-
-.btn1bigsmall:hover {
-  color: white;
-  background: var(--blue-color-variation);
+.btnwidesmall {
+  padding: var(--btnwidesmall-padding);
+  font-size: var(--btnsmall-font-size);
+  width: var(--btnwidesmall-width);
 }
 
 .btn1:hover {
-  color: white;
+  color: var(--btn1-color-font);
   background: var(--blue-color-variation);
 }
 
 .btn2 {
-  padding: 1rem 2.5rem;
-  margin: 1rem 1rem 1rem 0;
-  color: black;
-  background: white;
-}
-
-.btn2small {
-  padding: 0.8rem 1.25rem;
-  margin: 1rem 1rem 1rem 0;
-  font-size: 0.7rem;
-  color: black;
-  background: white;
-}
-
-.btn2big {
-  width: 30rem;
-  padding: 0.8rem 1.25rem;
-  margin: 1rem 1rem 1rem 0;
-  font-size: 0.7rem;
-  color: black;
-  background: white;
-}
-
-.btn2bigdef {
-  width: 30rem;
-  padding: 1rem 2.5rem;
-  margin: 1rem 1rem 1rem 0;
-  color: black;
-  background: white;
+  padding: var(--btn2-padding);
+  margin: var(--btn-margin);
 }

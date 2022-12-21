@@ -8,7 +8,7 @@ nav {
   display: flex;
   width: var(--width-navbar);
   transform: translate(-2rem, -7.3rem);
-  background-color: var(--background-color-navbar);
+  background: rgba(256, 256, 256, 0.2);
 }
 
 nav ul {
@@ -27,4 +27,51 @@ nav li {
 
 nav li:hover {
   color: var(--color-navbar-line);
+}
+
+nav i {
+  margin: 3rem 0 3rem 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+nav i:hover {
+  color: var(--blue-color-variation);
+}
+
+.clLi1 {
+  padding: 2rem !important;
+  transform: translate(-1rem, -2rem) !important;
+  background: white;
+}
+
+.clLi2 {
+  padding: 2rem !important;
+  transform: translate(-7rem, -2rem) !important;
+  background: white;
+}
+
+.clLi3 {
+  padding: 2rem !important;
+  transform: translate(-13rem, -2rem) !important;
+  background: white;
+}
+
+#li12,
+#li13,
+#li21,
+#li23,
+#li31,
+#li32 {
+  color: white;
+  background: rgba(256, 256, 256, 0.1);
+}
+
+#li12:hover,
+#li13:hover,
+#li21:hover,
+#li23:hover,
+#li31:hover,
+#li32:hover {
+  background: rgba(256, 256, 256, 0.3);
 }

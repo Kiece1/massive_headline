@@ -1,81 +1,17 @@
-.container2 {
-  width: 80vw;
-  margin-top: 80rem;
-  padding: 2rem;
-  text-align: justify;
-  background: white;
-  z-index: 1;
-}
-
-.container2__header__text {
-  width: 34vw;
-  line-height: 3rem;
-  margin-top: 2rem;
-  margin-bottom: 2.3rem;
-  font-style: italic;
-  text-align: justify;
-  font-size: 1.4rem;
-}
-
-@media screen and (max-width: 1920px) {
-  .container2__header__text {
-    width: 34vw;
-    line-height: 2.7rem;
-    margin-top: 2rem;
-    margin-bottom: 2.3rem;
-    font-style: italic;
-    text-align: center;
-    font-size: 1.2em;
-  }
+:root {
+  --container2-text-margin: 4rem 0 6rem 8rem;
+  --container2-text-width: 59vw;
+  --container2-line-height: 2.7rem;
+  --container2-font-style: italic;
+  --container2-text-align: justify;
+  --container2-text-font-size: 1.2rem;
 }
 
 .container2__text {
-  margin: 4rem 0 6rem 8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 59vw;
-  line-height: 2.7rem;
-  margin-top: 2rem;
-  margin-bottom: 2.3rem;
-  font-style: italic;
-  text-align: justify;
-  font-size: 1.2em;
-}
-
-@media screen and (max-width: 1920px) {
-  .container2__text {
-    margin: 4rem 0 6rem 8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 59vw;
-    line-height: 2.7rem;
-    margin-top: 2rem;
-    margin-bottom: 2.3rem;
-    font-style: italic;
-    text-align: justify;
-    font-size: 1.2em;
-  }
-}
-
-.container2__header__photo {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
-}
-
-.container2__header__photo img {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 60vw;
-  display: block;
-}
-
-div.container2__header > p.date {
-  margin-bottom: 3rem;
+  margin: var(--container2-text-margin);
+  width: var(--container2-text-width);
+  line-height: var(--container2-line-height);
+  font-style: var(--container2-font-style);
+  text-align: var(--container2-text-align);
+  font-size: var(--container2-text-font-size);
 }
